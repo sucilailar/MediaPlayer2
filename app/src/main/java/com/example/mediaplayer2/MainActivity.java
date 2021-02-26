@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         setUpUI();
 
-
+        playButton.setBackgroundResource(android.R.drawable.ic_media_play);
     }
 
     public void setUpUI(){
@@ -72,16 +72,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void pauseMusic(){
         if (mediaPlayer != null){ //jika media player tidak dalam keadaan null/ media player sedang play music
             mediaPlayer.pause();   //maka media nya di pause
-           // playButton.setBackgroundResource(android.R.drawable.ic_media_play);
-            playButton.setText("Play"); //untuk mengganti text pada tombol play menjadi "pause"
+            playButton.setBackgroundResource(android.R.drawable.ic_media_play);
+           // playButton.setText("Play"); //untuk mengganti text pada tombol play menjadi "pause"
         }
     }
 
     public void playMusic(){
         if (mediaPlayer != null){
             mediaPlayer.start();
-            //playButton.setBackgroundResource(android.R.drawable.ic_media_pause);
-            playButton.setText("Pause"); //untuk mengganti text pada tombol pause menjadi "play"
+            playButton.setBackgroundResource(android.R.drawable.ic_media_pause);
+           // playButton.setText("Pause"); //untuk mengganti text pada tombol pause menjadi "play"
         }
     }
 
